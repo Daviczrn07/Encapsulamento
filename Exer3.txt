@@ -1,0 +1,19 @@
+﻿namespace Encapsulamento
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Carro meuCarro = new Carro();
+
+            Console.WriteLine($"Velocidade inicial: {meuCarro.VelocidadeAtual} km/h");
+
+            meuCarro.Acelerar();
+            meuCarro.Acelerar();
+            Console.WriteLine($"Após acelerar duas vezes: {meuCarro.VelocidadeAtual} km/h");
+
+            meuCarro.Frear();
+            Console.WriteLine($"Após frear uma vez: {meuCarro.VelocidadeAtual} km/h");
+        }
+    }
+}
